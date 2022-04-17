@@ -1,6 +1,5 @@
 # 🎲 My SFML Journey
-i'll be posting my SFML journey all will be well structured for get to understand how SFML works based on what i'll be learning. 
-this will be running and building from CMAKE
+sharing my SFML journey feel free to create PR of your recent SFML game to contribute to. this will be running and building from CMAKE
 
 ## 🎮 Shoot Target with mouse 
 this is a simple game to start learning about collision and mouse interactivity, we shoot the ball to the target(hoop) - includes scoring (print the score in CLI)
