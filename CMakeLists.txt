@@ -8,6 +8,7 @@ project(main)
 set (CMAKE_CXX_STANDARD 11)
 
 
+set (CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake/;${CMAKE_MODULE_PATH}")
 
 find_package(SFML 2 COMPONENTS graphics window system audio network REQUIRED)
 
