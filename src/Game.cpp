@@ -8,6 +8,7 @@
 #include "SFML/Window/WindowStyle.hpp"
 #include <iostream>
 
+
 Game::Game():mWindow(sf::VideoMode(640,480),"SFML Application",sf::Style::Default),mPlayer(){
     mWindow.setFramerateLimit(60);
     
@@ -15,6 +16,7 @@ Game::Game():mWindow(sf::VideoMode(640,480),"SFML Application",sf::Style::Defaul
     mPlayer.setPosition(100.f,100.f);
     mPlayer.setFillColor(sf::Color::Cyan);
 }
+
 
 void Game::run(){
     sf::Clock clock;
@@ -34,7 +36,7 @@ void Game::processEvents(){
     sf::Event event;
     while (mWindow.pollEvent(event)) {
         
-        switch (event.type) {
+        switch(event.type) {
             case sf::Event::KeyPressed:
                 handlePlayerInput(event.key.code,true);
                 break;
@@ -45,6 +47,11 @@ void Game::processEvents(){
             case sf::Event::Closed:
                 mWindow.close();
                 break;
+            case sf::Event::Resized:
+                break;
+            default:
+                break;
+                
         }
     }
 }
